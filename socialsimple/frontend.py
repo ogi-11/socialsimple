@@ -3,7 +3,7 @@ import requests
 import base64
 import urllib.parse
 
-st.set_page_config(page_title="Simple Social", layout="wide")
+st.set_page_config(page_title="Ogi Social", layout="wide")
 
 # Initialize session state
 if 'token' not in st.session_state:
@@ -20,7 +20,7 @@ def get_headers():
 
 
 def login_page():
-    st.title("Kashyap's Fetish Site")
+    st.title("Ogi Social")
 
     # Simple form with two buttons
     email = st.text_input("Email:")
