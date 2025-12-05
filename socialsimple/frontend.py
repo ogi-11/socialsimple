@@ -40,7 +40,7 @@ def login_page():
                     st.session_state.token = token_data["access_token"]
 
                     # Get user info
-                    user_response = requests.get("hhttps://socialsimple-1.onrender.com/users/me", headers=get_headers())
+                    user_response = requests.get("https://socialsimple-1.onrender.com/users/me", headers=get_headers())
                     if user_response.status_code == 200:
                         st.session_state.user = user_response.json()
                         st.rerun()
